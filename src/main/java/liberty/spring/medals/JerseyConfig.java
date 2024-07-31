@@ -1,12 +1,13 @@
 package liberty.spring.medals;
 
 import org.glassfish.jersey.server.ResourceConfig;
-import org.springframework.context.annotation.Configuration;
-/* Registers the Jersey endpoint */
+import org.springframework.stereotype.Component;
+/* Registers the Jersey equivalent of restful service Application. By adding a Spring Component, it marks the class as a controller stereotype in this case */
 /* COMMENTTOCODE */
-@Configuration
+@Component
 public class JerseyConfig extends ResourceConfig {
     public JerseyConfig() {
         register(MedalsController.class);
     }
 }
+/* ENDHOLE */

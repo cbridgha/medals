@@ -1,14 +1,12 @@
 package liberty.spring.medals;
 
 import jakarta.xml.bind.annotation.XmlRootElement;
-//import jakarta.xml.bind.annotation.XmlElement;
 import java.util.ArrayList;
-/* Declares an xml binding to object MedalCount */
+/* Declares a Jakarta root xml binding to class MedalResult */
 /* COMMENTTOCODE */
 @XmlRootElement(namespace = "liberty.spring.medals.result")
 public class MedalResult {
 
- //   @XmlElement(name = "counts")
     private ArrayList<MedalCount> counts;
 
     protected MedalResult() {
@@ -24,5 +22,5 @@ public class MedalResult {
     public ArrayList<MedalCount> getCounts() {
         return counts;
     }
-
 }
+/* ENDHOLE */

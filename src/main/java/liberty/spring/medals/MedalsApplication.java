@@ -10,5 +10,5 @@ public class MedalsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MedalsApplication.class, args);
 	}
-
 }
+/* ENDHOLE */

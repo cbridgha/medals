@@ -1,13 +1,12 @@
 package liberty.spring.medals;
 
-import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
-/* Declaring a Spring Boot Component that declares a spring bean producing a rest endpoint "medals" */
+/* Declaring a Spring Component that declares a spring controller class in this case, it declares a jakarta restful services endpoint "medals" */
 /* COMMENTTOCODE */
 @Component
 @Path("/medals")
@@ -23,3 +22,4 @@ public class MedalsController {
         return new MedalResult(allResults);
     }
 }
+/* ENDHOLE */
