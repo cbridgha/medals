@@ -2,7 +2,7 @@ package liberty.spring.medals;
 
 import jakarta.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
-/* Declares a Jakarta root xml binding to class MedalResult */
+/* A Jakarta root xml binding that helps serialize the Bean class MedalResult, including embedded MedalCount fields */
 /* COMMENTTOCODE */
 @XmlRootElement(namespace = "liberty.spring.medals.result")
 public class MedalResult {
